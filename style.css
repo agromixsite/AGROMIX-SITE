@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Hey Comic';
+    src: url('hey_comic/Hey\ Comic.ttf') format('truetype');
+}
+
+body
+{    
+    background-color: #FFFBE8;
+    display: flex;
+    flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    font-family: 'Hey Comic';
+    color: #5A2608;
+    padding: 10px; /* Adicione um pouco de padding para evitar o conteúdo colado nas bordas */
+}
+.foto-perfil
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 5px;    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.28);  
+}
+.foto-perfil:hover
+{   
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.401);  
+}
+.social-icons 
+{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 1px;
+    flex-wrap: wrap; /* Permite que os ícones se organizem em várias linhas se necessário */
+}
+.social-icons a 
+{
+    color:  #592608;  
+    font-size: 45px; /*Tamanho dos icones*/
+    margin: 20px; /*Distancia entre os icones*/
+    text-decoration: none; /* Tira qualquer formatação de texto*/        
+}
+.social-icons a:hover 
+{
+    color: #F28705;
+    font-size: 50px;
+} 
+b
+{    
+    font-size: 18px;
+}
+h1
+{
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
+    font-size: 25px;
+}
+h1:hover
+{
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.311);
+}
+h2
+{
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
+}
+main
+{
+    background-image: url(imagem-fundo.png);
+    width: 100%;  
+    max-width: 450px; /* Define a largura máxima para não ultrapassar no desktop */
+    height: 150px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357); 
+}
+main > h2 
+{
+    font-size: 25px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357);
+    margin-bottom: 0px;
+}
+section
+{
+    background-color: #F28705;
+    width: 100%;  
+    max-width: 450px; /* Define a largura máxima para não ultrapassar no desktop */
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357); 
+}
+footer
+{
+    background-color: #F28705;
+    width: 100%;
+    max-width: 450px; /* Define a largura máxima para não ultrapassar no desktop */
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357); 
+    color: #FAF1D2;
+    text-decoration: none;
+    font-size: 13px;
+}
+a
+{
+    text-decoration: none;   
+}
+
+a#final
+{
+    color: #FAF1D2;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a#final:hover
+{
+    color: #592608;
+}
+
+a:active
+{
+    color:  #592608;
+}
+
+img
+{
+    width: 100%;
+    max-width: 450px; /* Define a largura máxima para não ultrapassar no desktop */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357); 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+}
+nav
+{
+    background-image: url(imagem-fundo.png);
+    width: 100%;  
+    max-width: 450px; /* Define a largura máxima para não ultrapassar no desktop */
+    height: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.357); 
+}
+nav > a
+{
+    text-decoration: none;
+    color: #592608;
+}
+nav > a:hover
+{
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .social-icons a 
+    {
+        font-size: 35px; /* Tamanho dos ícones menor em telas pequenas */
+        margin: 20px; /* Distância entre os ícones */
+    }
+    h1 {
+        font-size: 22px; /* Fonte menor em telas pequenas */
+    }
+    h2 {
+        font-size: 22px; /* Fonte menor em telas pequenas */
+    }
+    main, section, footer, nav {
+        width: 100%; /* Garante que use toda a largura da tela */
+    }
+}
